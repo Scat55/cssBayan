@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+
+}
+
+.acordeon {
+    width: 600px;
+}
+
+.acordeon__item {
+    padding-bottom: 30px;
+}
+
+.acordeon__content {
+    cursor: pointer;
+    transition: all .3s;
+}

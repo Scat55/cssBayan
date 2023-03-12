@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+
+}
+
+.acordeon {
+    width: 600px;
+}
+
+.acordeon__item {
+    padding-bottom: 30px;
+}
+
+.acordeon__content {
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.acordeon__title {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(56, 63, 201);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.acordeon__input {
+    width: 0;
+    height: 0;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.acordeon__faq-img {
+    display: none;
+    margin-top: 10px;
+    transition: all .3s;
+}
+
+.img {
+    width: 500px;
+    height: 500px;
+}
+
+.acordeon__btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: right;
+    text-align: center;
+    transition: all .3s;
+}
+
+.acordeon__line {
+    border-bottom: 1px solid #333;
+    margin-top: 10px;
+}
+
+/* Hover  */
+
+.acordeon__content:hover>.acordeon__title {
+    color: #000;
+}
+
+.acordeon__content:hover>.acordeon__btn {
+    transform: rotate(135deg);
+    transform-origin: 50% 50%;
+}
+
+.acordeon__input:checked+.acordeon__faq-img {
+    display: block;
+}
+
+.acordeon__input:hover+.acordeon__faq-img {
+    display: block;
+}
+
+/* Media */
+
+@media (max-width: 820px) {
+    .img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 320px) {
+    .acordeon {
+        width: 300px;
+    }
+
+    .acordeon__title {
+        font-size: 24px;
+    }
+
+    .acordeon__btn {
+        width: 20px;
+        height: 20px;
+    }
+
+    .img {
+        width: 250px;
+        height: 250px;
+    }
+}

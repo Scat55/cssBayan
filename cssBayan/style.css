@@ -13,6 +13,7 @@ body {
     margin-top: 250px;
 }
 
+/*
 .acordeon {
     width: 600px;
 }
@@ -35,4 +36,16 @@ body {
     font-weight: bold;
     color: rgb(56, 63, 201);
     transition: all .5s;
+} */
+
+/* .acordeon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.acordeon__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

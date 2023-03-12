@@ -26,3 +26,44 @@ body {
     cursor: pointer;
     transition: all .3s;
 }
+
+.acordeon__title {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(56, 63, 201);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.acordeon__input {
+    width: 0;
+    height: 0;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.acordeon__faq-img {
+    display: none;
+    margin-top: 10px;
+    transition: all .3s;
+}
+
+.img {
+    width: 500px;
+    height: 500px;
+}
+
+.acordeon__btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: right;
+    text-align: center;
+    transition: all .3s;
+}
+
+.acordeon__line {
+    border-bottom: 1px solid #333;
+    margin-top: 10px;
+}
